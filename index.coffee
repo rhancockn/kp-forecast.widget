@@ -121,51 +121,7 @@ update: (output, domEl) ->
 
     # xkcd = JSON.parse(output)
     container = $(domEl).find('#container')
-    content =
-      """
-  <div class="calendar">
-    <div class="month-indicator kp4">
-      Max Kp: 4
-    </div>
-    <div class="day-of-week">
-      <div>Su</div>
-      <div>Mo</div>
-      <div>Tu</div>
-      <div>We</div>
-      <div>Th</div>
-      <div>Fr</div>
-      <div>Sa</div>
-    </div>
-    <div class="date-grid">
-    <button class="kp3">30</button>
-<button class="kp3">31</button>
-<button class="kp3">1</button>
-<button class="kp2">2</button>
-<button class="kp2">3</button>
-<button class="kp2">4</button>
-<button class="kp2">5</button>
-<button class="kp2">6</button>
-<button class="kp2">7</button>
-<button class="kp2">8</button>
-<button class="kp2">9</button>
-<button class="kp2">10</button>
-<button class="kp2">11</button>
-<button class="kp2">12</button>
-<button class="kp2">13</button>
-<button class="kp4">14</button>
-<button class="kp4">15</button>
-<button class="kp2">16</button>
-<button class="kp2">17</button>
-<button class="kp2">18</button>
-<button class="kp2">19</button>
-<button class="kp2">20</button>
-<button class="kp2">21</button>
-<button class="kp2">22</button>
-<button class="kp2">23</button>
-<button class="kp2">24</button>
-<button class="kp2">25</button></div>
-</div>
-      """
+    content = output
     $(container).html content
   catch e
     #console.log e
